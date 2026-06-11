@@ -236,6 +236,7 @@ ul { list-style: none; }
 
 /* ── HERO ────────────────────────────────────────────────── */
 .hero {
+  min-height: 100vh;
   min-height: 100svh;
   padding-top: var(--nav-h);
   display: flex;
@@ -251,6 +252,7 @@ ul { list-style: none; }
   width: 45%;
   height: 100%;
   background: var(--off-white);
+  -webkit-clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%);
   z-index: 0;
 }
@@ -810,6 +812,7 @@ ul { list-style: none; }
   align-items: start;
 }
 .approach-left {
+  position: -webkit-sticky;
   position: sticky;
   top: calc(var(--nav-h) + 40px);
 }

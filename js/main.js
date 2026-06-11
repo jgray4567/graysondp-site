@@ -18,8 +18,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeBtn = document.getElementById('mobileClose');
   const mobileLinks = menu.querySelectorAll('.mobile-link');
 
-  const openMenu  = () => { menu.classList.add('open'); document.body.style.overflow = 'hidden'; };
-  const closeMenu = () => { menu.classList.remove('open'); document.body.style.overflow = ''; };
+  let scrollY = 0;
+  const openMenu = () => {
+    scrollY = window.scrollY;
+    menu.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.width = '100%';
+  };
+  const closeMenu = () => {
+    menu.classList.remove('open');
+    document.body.style.overflow = '';
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.width = '';
+    window.scrollTo(0, scrollY);
+  };
 
   toggle.addEventListener('click', openMenu);
   closeBtn.addEventListener('click', closeMenu);
