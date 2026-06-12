@@ -106,8 +106,9 @@ ul { list-style: none; }
   z-index: 100;
   height: var(--nav-h);
   background: rgba(255,255,255,0.95);
-  backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  isolation: isolate;
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s, box-shadow 0.3s;
 }
@@ -245,16 +246,20 @@ ul { list-style: none; }
   position: relative;
   overflow: hidden;
 }
-.hero::before {
-  content: '';
+/* Safari struggles with clip-path on pseudo-elements — use inline SVG diagonal instead */
+.hero-diagonal {
   position: absolute;
   top: 0; right: 0;
   width: 45%;
   height: 100%;
-  background: var(--off-white);
-  -webkit-clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%);
-  clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%);
   z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.hero-diagonal svg {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .hero-inner {
   flex: 1;
@@ -674,6 +679,11 @@ ul { list-style: none; }
   aspect-ratio: 4/3;
   overflow: hidden;
 }
+/* Safari fallback for aspect-ratio */
+@supports not (aspect-ratio: 4/3) {
+  .pg-img { height: 0; padding-bottom: 75%; position: relative; }
+  .pg-img img { position: absolute; top: 0; left: 0; }
+}
 .pg-img img {
   width: 100%; height: 100%;
   object-fit: cover;
@@ -1069,7 +1079,7 @@ ul { list-style: none; }
   .nav-links { display: none; }
   .nav-toggle { display: flex; }
 
-  .hero::before { display: none; }
+  .hero-diagonal { display: none; }
   .hero-bottom { flex-direction: column; align-items: flex-start; gap: 32px; }
 
   .services-grid { grid-template-columns: 1fr; }

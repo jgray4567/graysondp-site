@@ -55,6 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     reveals.forEach(el => el.classList.add('visible'));
   }
+  /* Safety: reveal everything after 3s no matter what (Safari fallback) */
+  setTimeout(() => { reveals.forEach(el => el.classList.add('visible')); }, 3000);
 
   /* ── PORTFOLIO FILTER ────────────────────────────────── */
   const filterBtns = document.querySelectorAll('.pf');
