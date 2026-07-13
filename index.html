@@ -74,6 +74,7 @@
         <a href="#work" class="nav-link">Work</a>
         <a href="#services" class="nav-link">Services</a>
         <a href="app-studio.html" class="nav-link">App Studio</a>
+        <a href="services.html" class="nav-link">Services</a>
         <a href="#contact" class="nav-cta">Start a Project</a>
       </div>
       <button class="nav-toggle" id="navToggle" aria-label="Open menu">
@@ -91,6 +92,7 @@
       <a href="#work" class="mobile-link">Work</a>
       <a href="#services" class="mobile-link">Services</a>
       <a href="app-studio.html" class="mobile-link">App Studio</a>
+      <a href="services.html" class="mobile-link">Services</a>
       <a href="#approach" class="mobile-link">Approach</a>
       <a href="#contact" class="mobile-link">Contact</a>
     </nav>
@@ -420,44 +422,16 @@
     <div class="section-inner">
       <div class="contact-layout">
         <div class="contact-left">
-          <h2 class="section-headline reveal">An agency will manage<br>your expectations.<br><em>We'd rather exceed them.</em></h2>
-          <p class="contact-sub reveal">GDP is built for organizations that have been let down before and can't afford to be again.</p>
+          <h2 class="section-headline reveal">Tell us what you're
+building. We'll tell you
+what it <em>costs.</em></h2>
+          <p class="contact-sub reveal">Answer a few questions and get a rough estimate in under two minutes. No sales calls required to get a number.</p>
         </div>
         <div class="contact-right">
-          <form class="contact-form" id="contactForm" action="https://formspree.io/f/xkoanqgo" method="POST">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your full name" required>
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="you@organization.com" required>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="project">Project Type</label>
-              <select id="project" name="project">
-                <option value="">Select a service</option>
-                <option>Digital Report / Advocacy Tool</option>
-                <option>Rapid Prototyping &amp; App Development</option>
-                <option>Workflow Optimization</option>
-                <option>Brand &amp; Identity</option>
-                <option>Executive Presentation</option>
-                <option>Legacy Code Rescue</option>
-                <option>Other / Not Sure Yet</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="message">Tell Us About Your Project</label>
-              <textarea id="message" name="message" rows="5" placeholder="What are you building? What's the deadline? What's at stake?" required></textarea>
-            </div>
-            <button type="submit" class="btn-submit">
-              Send Message
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-            <p class="form-success" id="formSuccess" hidden>Message sent. We'll be in touch shortly.</p>
-          </form>
+          <!-- GDP Estimate Bot -->
+          <link rel="stylesheet" href="css/estimate-bot.css">
+          <div id="estimate-bot"></div>
+          <script src="js/estimate-bot.js"></script>
         </div>
       </div>
     </div>

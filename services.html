@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GDP Services — Productized AI Design &amp; Development | Grayson Design Partners</title>
+  <meta name="description" content="Fixed-price AI-powered services. Site health scans, 508 compliance audits, SEO content engines. Buy online, get results in 48 hours. No calls required.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#e86e34">
+  <link rel="canonical" href="https://graysondp.com/services.html">
+  <link rel="icon" type="image/svg+xml" href="images/gdp-sun.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Grayson Design Partners">
+  <meta property="og:title" content="GDP Services — Productized AI Design &amp; Development">
+  <meta property="og:description" content="Fixed-price AI-powered services. Buy online, get results in 48 hours. No calls required.">
+  <meta property="og:url" content="https://graysondp.com/services.html">
+  <meta property="og:image" content="https://graysondp.com/images/gdp-og.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GDP Services — Productized AI Design &amp; Development">
+  <meta name="twitter:description" content="Fixed-price AI-powered services. Buy online, get results in 48 hours. No calls required.">
+  <meta name="twitter:image" content="https://graysondp.com/images/gdp-og.webp">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "GDP Productized Services",
+    "provider": {
+      "@type": "ProfessionalService",
+      "name": "Grayson Design Partners",
+      "url": "https://graysondp.com"
+    },
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Service",
+          "name": "Site Health Scan",
+          "description": "Comprehensive website audit: broken links, missing meta tags, mobile issues, speed report, SEO gaps. Delivered as PDF in 48 hours.",
+          "offers": { "@type": "Offer", "price": "299", "priceCurrency": "USD" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Service",
+          "name": "508 Compliance Audit",
+          "description": "Section 508 / WCAG 2.1 accessibility scan with prioritized fix recommendations and code samples. Delivered as PDF in 48 hours.",
+          "offers": { "@type": "Offer", "price": "499", "priceCurrency": "USD" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Service",
+          "name": "SEO Content Engine",
+          "description": "Programmatic content cluster: 10 SEO-optimized articles, schema markup, internal linking strategy. Monthly delivery.",
+          "offers": { "@type": "Offer", "price": "1200", "priceCurrency": "USD" }
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GL7MQ8Y8G0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GL7MQ8Y8G0');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/app-studio.css">
+  <style>
+    /* ── SERVICES PAGE SPECIFIC ─────────────────────────── */
+    .sv-hero { background: var(--dark); }
+    .sv-hero::before { background: rgba(255,255,255,0.04); }
+    .sv-hero .hero-headline { color: var(--white); }
+    .sv-hero .hero-italic { color: var(--gray); }
+    .sv-hero .hero-headline em { color: var(--orange); }
+    .sv-hero .hero-sub { color: rgba(255,255,255,0.55); }
+    .sv-hero .btn-ghost { color: var(--white); border-color: rgba(255,255,255,0.35); }
+    .sv-hero .btn-ghost:hover { color: var(--orange); border-color: var(--orange); }
+    .sv-hero-inner { padding-top: 100px; }
+
+    .sv-section { padding: 80px 0; background: var(--white); }
+    .sv-section-dark { background: var(--dark); }
+    .sv-section-off { background: var(--off-white); }
+
+    /* ── SERVICE CARDS ──────────────────────────────────── */
+    .sv-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+    @media (max-width: 900px) { .sv-grid { grid-template-columns: 1fr; } }
+
+    .sv-card {
+      background: var(--white);
+      border: 1px solid var(--gray-xlt);
+      border-radius: 12px;
+      padding: 40px 32px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out);
+    }
+    .sv-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    }
+    .sv-card-featured {
+      border-color: var(--orange);
+      box-shadow: 0 4px 24px rgba(232,110,52,0.12);
+    }
+    .sv-card-flag {
+      position: absolute;
+      top: -12px;
+      left: 32px;
+      background: var(--orange);
+      color: var(--white);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 2px;
+    }
+
+    .sv-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+      background: rgba(232,110,52,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+    .sv-icon svg { width: 24px; height: 24px; stroke: var(--orange); }
+
+    .sv-card-tier {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-bottom: 8px;
+    }
+    .sv-card-name {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--dark);
+      margin-bottom: 12px;
+    }
+    .sv-card-desc {
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: var(--gray);
+      margin-bottom: 24px;
+      flex: 1;
+    }
+    .sv-card-deliver {
+      font-size: 0.78rem;
+      color: var(--orange);
+      font-weight: 600;
+      margin-bottom: 20px;
+      letter-spacing: 0.02em;
+    }
+    .sv-card-list {
+      list-style: none;
+      margin-bottom: 32px;
+    }
+    .sv-card-list li {
+      font-size: 0.85rem;
+      color: var(--dark);
+      padding: 8px 0;
+      border-bottom: 1px solid var(--gray-xlt);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .sv-card-list li:last-child { border-bottom: none; }
+    .sv-card-list li::before {
+      content: '→';
+      color: var(--orange);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .sv-price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .sv-price {
+      font-family: var(--font-serif);
+      font-size: 2.5rem;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      color: var(--dark);
+      line-height: 1;
+    }
+    .sv-price-period {
+      font-size: 0.85rem;
+      color: var(--gray);
+    }
+
+    .sv-cta {
+      display: block;
+      text-align: center;
+      padding: 14px 24px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      transition: all 0.2s var(--ease-out);
+      cursor: pointer;
+      border: none;
+      width: 100%;
+    }
+    .sv-cta-primary {
+      background: var(--orange);
+      color: var(--white);
+    }
+    .sv-cta-primary:hover { background: #d45a1f; }
+    .sv-cta-ghost {
+      background: transparent;
+      color: var(--dark);
+      border: 1px solid var(--gray-xlt);
+    }
+    .sv-cta-ghost:hover { border-color: var(--orange); color: var(--orange); }
+
+    /* ── HOW IT WORKS ───────────────────────────────────── */
+    .sv-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      margin-top: 48px;
+    }
+    @media (max-width: 900px) { .sv-steps { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 600px) { .sv-steps { grid-template-columns: 1fr; } }
+
+    .sv-step {
+      text-align: left;
+    }
+    .sv-step-num {
+      font-family: var(--font-mono);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--orange);
+      margin-bottom: 12px;
+    }
+    .sv-step h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 8px;
+    }
+    .sv-step p {
+      font-size: 0.88rem;
+      line-height: 1.6;
+      color: var(--gray);
+    }
+
+    /* ── ENTERPRISE CTA ─────────────────────────────────── */
+    .sv-enterprise {
+      background: var(--dark);
+      border-radius: 16px;
+      padding: 48px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .sv-enterprise-left h3 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 800;
+      color: var(--white);
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .sv-enterprise-left p {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.6;
+    }
+    .sv-enterprise-cta {
+      background: var(--orange);
+      color: var(--white);
+      padding: 14px 28px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+    .sv-enterprise-cta:hover { background: #d45a1f; }
+
+    /* ── CHECKOUT MODAL ─────────────────────────────────── */
+    .sv-modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(4px);
+      z-index: 9999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .sv-modal-overlay.open { display: flex; }
+    .sv-modal {
+      background: var(--white);
+      border-radius: 16px;
+      max-width: 480px;
+      width: 100%;
+      padding: 40px;
+      position: relative;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+    .sv-modal-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--gray-xlt);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 18px;
+      color: var(--gray);
+      transition: background 0.2s;
+    }
+    .sv-modal-close:hover { background: var(--gray-lt); }
+    .sv-modal h3 {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--dark);
+      margin-bottom: 8px;
+    }
+    .sv-modal-price {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--orange);
+      margin-bottom: 24px;
+    }
+    .sv-modal form { display: flex; flex-direction: column; gap: 16px; }
+    .sv-modal .form-group { display: flex; flex-direction: column; gap: 6px; }
+    .sv-modal label {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--gray);
+      letter-spacing: 0.02em;
+    }
+    .sv-modal input, .sv-modal textarea, .sv-modal select {
+      padding: 12px 14px;
+      border: 1px solid var(--gray-xlt);
+      border-radius: 6px;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      color: var(--dark);
+      transition: border-color 0.2s;
+    }
+    .sv-modal input:focus, .sv-modal textarea:focus, .sv-modal select:focus {
+      outline: none;
+      border-color: var(--orange);
+    }
+    .sv-modal .btn-submit {
+      background: var(--orange);
+      color: var(--white);
+      padding: 14px;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 8px;
+    }
+    .sv-modal .btn-submit:hover { background: #d45a1f; }
+    .sv-modal .sv-modal-note {
+      font-size: 0.78rem;
+      color: var(--gray);
+      text-align: center;
+      margin-top: 16px;
+      line-height: 1.5;
+    }
+    .sv-modal-success {
+      text-align: center;
+      padding: 24px 0;
+    }
+    .sv-modal-success h3 { margin-bottom: 16px; }
+    .sv-modal-success p { color: var(--gray); line-height: 1.6; font-size: 0.95rem; }
+    .sv-modal-success .sv-check {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: rgba(232,110,52,0.1);
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .sv-modal-success .sv-check svg { width: 28px; height: 28px; stroke: var(--orange); }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="mainNav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/gdp-logo.svg" alt="Grayson Design Partners" class="logo-svg">
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">GDP</a>
+        <a href="app-studio.html" class="nav-link">App Studio</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="index.html#contact" class="nav-cta">Start a Project</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">
+      <span></span><span></span>
+    </button>
+    <nav class="mobile-nav">
+      <a href="index.html" class="mobile-link">GDP</a>
+      <a href="app-studio.html" class="mobile-link">App Studio</a>
+      <a href="services.html" class="mobile-link">Services</a>
+      <a href="index.html#contact" class="mobile-link">Contact</a>
+    </nav>
+    <div class="mobile-footer">
+      <span>Washington, DC &nbsp;·&nbsp; Est. 2008</span>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero sv-hero" id="hero">
+    <div class="hero-inner sv-hero-inner">
+      <div class="as-hero-eyebrow">
+        <span class="as-badge">No Calls Required</span>
+      </div>
+      <h1 class="hero-headline">
+        <span class="hero-line">Buy it.</span>
+        <span class="hero-line hero-italic">We deliver.</span>
+        <span class="hero-line"><em>48 hours.</em></span>
+      </h1>
+      <div class="hero-bottom">
+        <p class="hero-sub">Fixed-price AI-powered services for websites, apps, and digital products. Pick a service, paste your URL, get a deliverable in 48 hours. No proposals, no calls, no hourly billing.</p>
+        <div class="hero-actions">
+          <a href="#services" class="btn-primary">View Services</a>
+          <a href="#how-it-works" class="btn-ghost">How It Works
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="sv-section sv-section-off" id="how-it-works">
+    <div class="section-inner">
+      <h2 class="section-headline reveal">How it works.</h2>
+      <div class="sv-steps">
+        <div class="sv-step reveal">
+          <div class="sv-step-num">01</div>
+          <h3>Pick a Service</h3>
+          <p>Choose what you need. Fixed price, defined deliverable. No "let's jump on a call to discuss."</p>
+        </div>
+        <div class="sv-step reveal">
+          <div class="sv-step-num">02</div>
+          <h3>Submit Your URL</h3>
+          <p>Paste your website URL and any context. That's the brief. Our AI agents start immediately.</p>
+        </div>
+        <div class="sv-step reveal">
+          <div class="sv-step-num">03</div>
+          <h3>We Do the Work</h3>
+          <p>AI agents scan, analyze, and generate. A senior designer reviews every deliverable before it ships.</p>
+        </div>
+        <div class="sv-step reveal">
+          <div class="sv-step-num">04</div>
+          <h3>Get Results</h3>
+          <p>PDF report delivered to your inbox in 48 hours. Actionable findings, prioritized fixes, clear next steps.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="sv-section" id="services">
+    <div class="section-inner">
+      <h2 class="section-headline reveal">Productized<br><em>services.</em></h2>
+      <p style="margin-top:16px;font-size:1.05rem;color:var(--gray);max-width:560px;line-height:1.6;" class="reveal">
+        Fixed price. Fixed scope. 48-hour delivery. No subscriptions required.
+      </p>
+
+      <div class="sv-grid">
+
+        <!-- Site Health Scan -->
+        <div class="sv-card reveal">
+          <div class="sv-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <div class="sv-card-tier">One-Time Audit</div>
+          <h3 class="sv-card-name">Site Health Scan</h3>
+          <p class="sv-card-desc">Comprehensive website audit. We scan every page for broken links, missing meta tags, mobile issues, speed problems, and SEO gaps.</p>
+          <div class="sv-card-deliver">Deliverable: 20+ page PDF report in 48 hours</div>
+          <ul class="sv-card-list">
+            <li>Broken link scan (all pages)</li>
+            <li>Missing/hDuplicate meta tags</li>
+            <li>Mobile responsiveness check</li>
+            <li>Core Web Vitals + speed report</li>
+            <li>SEO gap analysis (title, H1, alt, schema)</li>
+            <li>Prioritized fix list with effort estimates</li>
+          </ul>
+          <div class="sv-price-row">
+            <span class="sv-price">$299</span>
+            <span class="sv-price-period">one-time</span>
+          </div>
+          <button class="sv-cta sv-cta-primary" onclick="openCheckout('Site Health Scan', 299, 'one-time')">Order Now</button>
+        </div>
+
+        <!-- 508 Compliance Audit -->
+        <div class="sv-card sv-card-featured reveal">
+          <div class="sv-card-flag">Most Popular</div>
+          <div class="sv-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+          </div>
+          <div class="sv-card-tier">Accessibility Audit</div>
+          <h3 class="sv-card-name">508 Compliance Audit</h3>
+          <p class="sv-card-desc">Section 508 / WCAG 2.1 AA accessibility scan. Find every violation, get prioritized fixes with code samples you can hand to a developer.</p>
+          <div class="sv-card-deliver">Deliverable: Detailed PDF + fix recommendations in 48 hours</div>
+          <ul class="sv-card-list">
+            <li>Full WCAG 2.1 AA violation scan</li>
+            <li>Section 508 compliance checklist</li>
+            <li>Keyboard navigation audit</li>
+            <li>Screen reader compatibility test</li>
+            <li>Color contrast analysis</li>
+            <li>Prioritized fix list with code samples</li>
+          </ul>
+          <div class="sv-price-row">
+            <span class="sv-price">$499</span>
+            <span class="sv-price-period">one-time</span>
+          </div>
+          <button class="sv-cta sv-cta-primary" onclick="openCheckout('508 Compliance Audit', 499, 'one-time')">Order Now</button>
+        </div>
+
+        <!-- SEO Content Engine -->
+        <div class="sv-card reveal">
+          <div class="sv-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <div class="sv-card-tier">Monthly Retainer</div>
+          <h3 class="sv-card-name">SEO Content Engine</h3>
+          <p class="sv-card-desc">Programmatic content production. 10 SEO-optimized articles per month, schema markup, internal linking strategy, published on schedule.</p>
+          <div class="sv-card-deliver">Deliverable: 10 articles/month + monthly performance report</div>
+          <ul class="sv-card-list">
+            <li>10 SEO-optimized articles (1,500+ words)</li>
+            <li>Keyword research + cluster strategy</li>
+            <li>Schema markup (Article, FAQ, HowTo)</li>
+            <li>Internal linking architecture</li>
+            <li>Meta descriptions + title optimization</li>
+            <li>Monthly ranking + traffic report</li>
+          </ul>
+          <div class="sv-price-row">
+            <span class="sv-price">$1,200</span>
+            <span class="sv-price-period">/month</span>
+          </div>
+          <button class="sv-cta sv-cta-primary" onclick="openCheckout('SEO Content Engine', 1200, 'monthly')">Subscribe</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ENTERPRISE CTA -->
+  <section class="sv-section sv-section-off" id="enterprise-cta">
+    <div class="section-inner">
+      <div class="sv-enterprise reveal">
+        <div class="sv-enterprise-left">
+          <h3>Need something bigger?</h3>
+          <p>Custom AI app development, government UX contracts, on-prem AI infrastructure. Projects from $15K to $150K. That's when we talk.</p>
+        </div>
+        <a href="app-studio.html" class="sv-enterprise-cta">Explore App Studio →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <a href="#hero"><img src="images/gdp-logo.svg" alt="Grayson Design Partners" class="logo-svg footer-logo-svg"></a>
+        <nav class="footer-nav">
+          <a href="index.html">GDP</a>
+          <a href="app-studio.html">App Studio</a>
+          <a href="services.html">Services</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Grayson Design Partners. Washington, DC.</span>
+        <span class="footer-tagline">Fast is easy. Right is hard. We deliver both.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CHECKOUT MODAL -->
+  <div class="sv-modal-overlay" id="checkoutModal">
+    <div class="sv-modal">
+      <button class="sv-modal-close" onclick="closeCheckout()">×</button>
+      <div id="checkoutForm">
+        <h3 id="modalServiceName">Service</h3>
+        <div class="sv-modal-price" id="modalServicePrice">$0</div>
+        <form id="checkoutFormEl" onsubmit="submitOrder(event)">
+          <div class="form-group">
+            <label for="checkoutName">Name</label>
+            <input type="text" id="checkoutName" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="checkoutEmail">Email</label>
+            <input type="email" id="checkoutEmail" name="email" placeholder="you@company.com" required>
+          </div>
+          <div class="form-group">
+            <label for="checkoutUrl">Website URL</label>
+            <input type="url" id="checkoutUrl" name="url" placeholder="https://yoursite.com" required>
+          </div>
+          <div class="form-group">
+            <label for="checkoutNotes">Anything we should know? (optional)</label>
+            <textarea id="checkoutNotes" name="notes" rows="3" placeholder="Specific pages, priorities, deadlines..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            Place Order
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="margin-left:8px;display:inline-block;vertical-align:middle"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </form>
+        <p class="sv-modal-note">You'll receive a confirmation email with payment instructions. Work begins once payment is processed. 48-hour delivery starts after confirmation.</p>
+      </div>
+      <div class="sv-modal-success" id="checkoutSuccess" style="display:none">
+        <div class="sv-check">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3>Order received.</h3>
+        <p>Check your inbox for a confirmation email with payment instructions. We'll start work the moment payment clears. Your deliverable lands in 48 hours.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    /* ── CHECKOUT MODAL ─────────────────────────────────── */
+    let currentService = {};
+    function openCheckout(name, price, period) {
+      currentService = { name, price, period };
+      document.getElementById('modalServiceName').textContent = name;
+      document.getElementById('modalServicePrice').textContent = '$' + price.toLocaleString() + (period === 'monthly' ? '/mo' : '');
+      document.getElementById('checkoutForm').style.display = 'block';
+      document.getElementById('checkoutSuccess').style.display = 'none';
+      document.getElementById('checkoutModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeCheckout() {
+      document.getElementById('checkoutModal').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    document.getElementById('checkoutModal').addEventListener('click', function(e) {
+      if (e.target === this) closeCheckout();
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeCheckout();
+    });
+    function submitOrder(e) {
+      e.preventDefault();
+      // In production: send to backend → Stripe checkout → email confirmation
+      // For now: show success state, log the order
+      const order = {
+        service: currentService.name,
+        price: currentService.price,
+        period: currentService.period,
+        name: document.getElementById('checkoutName').value,
+        email: document.getElementById('checkoutEmail').value,
+        url: document.getElementById('checkoutUrl').value,
+        notes: document.getElementById('checkoutNotes').value,
+        timestamp: new Date().toISOString()
+      };
+      console.log('GDP Order:', order);
+      // TODO: wire to Stripe / Formspree / backend endpoint
+      document.getElementById('checkoutForm').style.display = 'none';
+      document.getElementById('checkoutSuccess').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
