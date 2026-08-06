@@ -439,56 +439,9 @@ what it <em>costs.</em></h2>
         </div>
         <div class="contact-right">
           <!-- GDP Estimate Bot -->
-          <link rel="stylesheet" href="scope-estimator.css">
-          <div class="scope-estimator">
-            <div class="scope-layout">
-              <form id="scopeForm" class="scope-form-panel">
-                <div class="scope-field">
-                  <label class="scope-label" for="scopeService">What are you building?</label>
-                  <select class="scope-select" id="scopeService" required>
-                    <option value="">Select a service</option>
-                    <option value="digital-report">Digital Report / Advocacy Tool</option>
-                    <option value="app-dev">Rapid App Development (iOS/Android)</option>
-                    <option value="web-app">Full-Stack Web Application</option>
-                    <option value="workflow">Workflow Optimization / AI Integration</option>
-                    <option value="brand">Brand &amp; Identity</option>
-                    <option value="presentation">Executive Presentation</option>
-                  </select>
-                </div>
-                <div class="scope-field">
-                  <label class="scope-label" for="scopeComplexity">Complexity</label>
-                  <select class="scope-select" id="scopeComplexity" required>
-                    <option value="">Select complexity</option>
-                    <option value="simple">Simple — 1-3 screens/pages</option>
-                    <option value="moderate">Moderate — 4-8 screens/pages</option>
-                    <option value="complex">Complex — 9+ screens, integrations</option>
-                  </select>
-                </div>
-                <div class="scope-field">
-                  <label class="scope-label" for="scopeDescription">Tell us more (optional)</label>
-                  <textarea class="scope-textarea" id="scopeDescription" placeholder="Describe your project, audience, timeline, or any specific requirements..." rows="5"></textarea>
-                </div>
-                <button type="submit" class="scope-generate">
-                  Get Estimate
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8h12M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </button>
-              </form>
-              <div class="scope-result-panel" id="scopeResult">
-                <div class="scope-empty" id="scopeEmpty">
-                  <div class="scope-empty-icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                  </div>
-                  <p class="scope-empty-text">Fill out the form to get a rough estimate. Takes under 2 minutes.</p>
-                </div>
-                <div class="scope-loading" id="scopeLoading">
-                  <div class="scope-spinner"></div>
-                  <p class="scope-loading-text">Crunching numbers...</p>
-                </div>
-                <div class="scope-result" id="scopeResultContent"></div>
-              </div>
-            </div>
-          </div>
-          <script src="scope-estimator.js"></script>
+          <a href="app-studio.html#scope-estimator" class="btn-primary">Get an Instant Estimate
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
         </div>
       </div>
     </div>
