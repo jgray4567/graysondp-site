@@ -1240,3 +1240,12 @@ ul { list-style: none; }
   .lb-stage { padding: 0 20px; }
   .lb-img { max-height: 60vh; }
 }
+
+/* Contact single-column layout */
+.contact-single {
+  max-width: 100%;
+  padding: 0 0 8px;
+}
+.contact-single .section-headline { margin-bottom: 20px; }
+.contact-single .contact-sub { margin-bottom: 32px; }
+.contact-single .btn-primary { display: inline-flex; }
