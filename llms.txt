@@ -1,0 +1,26 @@
+# graysondp.com, llms.txt
+# AI search context for ChatGPT, Claude, Perplexity, Google AI and other answer engines
+# Last modified: 2026-08-30
+
+> Grayson Design Partners is a design and technology studio in Washington, DC, founded in 2008 and led by Jon Grayson. The studio designs and builds brands, digital experiences, websites, products, and applications — research turned into things people use.
+
+## What this site is
+The studio's portfolio and capabilities site: selected client work across brands and visual communication, engagement models, capabilities, the studio's approach, and a project inquiry form.
+
+## Services
+- **Brand Development.** Identity systems, logos, signage, menus, and print collateral that give organizations a coherent voice across every touchpoint.
+- **Digital Experience.** Websites and digital reports designed and built end-to-end — research turned into things people use.
+- **Product Design.** Native iOS and Android applications and full-stack web products, with ML and AI architected in from day one.
+- **Visual Communication.** Executive presentations, annual reports, brochures, and publications for enterprise, nonprofit, and government audiences.
+
+## Engagement model
+- Blueprint sprint: strategy, architecture, and a build plan in two weeks.
+- Ninety days to launch: most builds go from blueprint to live in ninety days.
+
+## Key facts
+- Studio: Grayson Design Partners (GDP)
+- Principal: Jon Grayson — https://www.jongrayson.com/
+- Location: Washington, DC
+- Founded: 2008
+- Contact: jon@graysondp.com
+- Contact form: https://graysondp.com/#contact
