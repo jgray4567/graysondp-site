@@ -62,7 +62,7 @@
     document.body.style.overflow = open ? 'hidden' : '';
     envLock = open;
     if (open) { chrome.dataset.env = 'ink'; } else { syncChromeEnv(); }
-    if (open) { lastFocus = document.activeElement; setTimeout(function () { links[0] && links[0].focus(); }, 420); }
+    if (open) { lastFocus = document.activeElement; setTimeout(function () { menu.focus(); }, 420); }
     else if (lastFocus) { lastFocus.focus(); }
   }
   trig && trig.addEventListener('click', function () { setMenu(menu.dataset.open !== 'true'); });
@@ -194,7 +194,7 @@
   /* ---- 7b. the archive lightbox --------------------------------------- */
   var lb = document.getElementById('lightbox');
   if (lb) {
-    var tiles   = Array.prototype.slice.call(document.querySelectorAll('.tile'));
+    var tiles   = Array.prototype.slice.call(document.querySelectorAll('.tile:not(a)'));
     var lbLabel = document.getElementById('lbLabel');
     var lbCount = document.getElementById('lbCount');
     var lbPrev  = document.getElementById('lbPrev');

@@ -124,10 +124,17 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   display:flex; align-items:center; justify-content:space-between;
   padding-inline:var(--gut); pointer-events:none;
   mix-blend-mode:normal;
-  transition:color .5s var(--ease);
+  transition:color .5s var(--ease), background-color .5s var(--ease);
   color:var(--env-ink);
 }
 .chrome > *{pointer-events:auto}
+/* once the page scrolls, the floating bar picks up a translucent wash of the
+   section background it floats over — readable, but the page still shows through */
+.chrome.is-stuck{
+  background:color-mix(in srgb, var(--env-bg) 72%, transparent);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+}
 
 .brand{display:flex;align-items:center}
 .brand__logo{
@@ -205,7 +212,9 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   text-transform:uppercase; color:var(--bone);
   transform:translateY(110%);
   transition:transform .8s var(--ease), color .3s var(--ease);
+  will-change:transform;
 }
+.menu:focus{outline:none}
 .menu[data-open="true"] .menu__link{transform:none}
 .menu[data-open="true"] .menu__item:nth-child(1) .menu__link{transition-delay:.30s}
 .menu[data-open="true"] .menu__item:nth-child(2) .menu__link{transition-delay:.37s}
@@ -669,12 +678,14 @@ button.arrow{border:0;background:none;cursor:pointer}
 /* ── 19. RESPONSIVE ──────────────────────────────────────────────────────── */
 @media(max-width:899px){
   :root{--chrome-h:64px}
-  .hero{min-height:64svh}
+  .hero{min-height:100svh;min-height:100dvh}
+  .hero__top{justify-content:center}
+  .hero__type .ln > span{margin-inline:auto}
   .hero__type{font-size:clamp(2.4rem,12.2vw,5.4rem);letter-spacing:-.04em}
   /* fewer, larger crops inside the letterforms so they still read small */
   /* on the pale field the crops read on their own — no lift needed */
   .fillbox{--fillzoom:150%}
-  .hero__mark{width:min(138vh,860px);left:60%;top:21%}
+  .hero__mark{width:min(110vh,700px);left:84%;top:23%}
   .hero__burst{opacity:.52}
   .lay{gap:var(--s4)}
   .proj__say{font-size:1.24rem;max-width:none}
