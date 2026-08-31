@@ -329,7 +329,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 }
 .manifesto__body{
   margin-top:var(--s4);max-width:62ch;
-  font-size:var(--t-lg);line-height:1.42;letter-spacing:-.012em;color:var(--env-dim);
+  font-size:clamp(1.65rem, 2.7vw, 2.6rem);line-height:1.42;letter-spacing:-.012em;color:var(--env-dim);
 }
 .manifesto__body{border-top:1px solid var(--hair);padding-top:var(--s4)}
 
