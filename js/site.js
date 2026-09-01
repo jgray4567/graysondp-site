@@ -236,7 +236,7 @@
       },
       'logo-identity': {
         title: 'Brand Development',
-        images: ['img/LogoOHM10.webp', 'img/LogoOHM.webp', 'img/AF_Logo_Orange.webp', 'img/BDA_Logo.webp', 'img/FPlogo.webp', 'img/LogoACK.webp', 'img/LogoBS.webp', 'img/LogoFAF.webp', 'img/LogoGs.webp', 'img/LogoGreyone.webp', 'img/LogoHeritageAction.webp', 'img/LogoHP.webp', 'img/LogoMFA.webp', 'img/LogoMFA10.webp', 'img/LogoMMB01.webp', 'img/LogoTRS.webp', 'img/LogoTRUM.webp', 'img/LogoTTB.webp', 'img/LogoTTS.webp', 'img/MarTQue.webp', 'img/VA_Blend_onBG.webp', 'img/WoofBakeryLogo.webp', 'img/lb01.webp', 'img/lb02.webp', 'img/lb03.webp', 'img/lb04.webp', 'img/lb05.webp', 'img/lb06.webp', 'img/lb14.webp', 'img/lb15.webp', 'img/lb17.webp', 'img/lb19.webp', 'img/lb20.webp', 'img/lb21.webp', 'img/lb22.webp', 'img/lb23.webp']
+        images: ['img/LogoOHM10.webp', 'img/LogoOHM.webp', 'img/AF_Logo_Orange.webp', 'img/BDA_Logo.webp', 'img/FPlogo.webp', 'img/LogoACK.webp', 'img/LogoBS.webp', 'img/LogoFAF.webp', 'img/LogoGs.webp', 'img/LogoGreyone.webp', 'img/LogoHeritageAction.webp', 'img/LogoHP.webp', 'img/LogoJailbird.webp', 'img/LogoJailbirdBadge.webp', 'img/LogoMFA.webp', 'img/LogoMFA10.webp', 'img/LogoMMB01.webp', 'img/LogoTRS.webp', 'img/LogoTRUM.webp', 'img/LogoTTB.webp', 'img/LogoTTS.webp', 'img/MarTQue.webp', 'img/VA_Blend_onBG.webp', 'img/WoofBakeryLogo.webp', 'img/lb01.webp', 'img/lb02.webp', 'img/lb03.webp', 'img/lb04.webp', 'img/lb05.webp', 'img/lb06.webp', 'img/lb14.webp', 'img/lb15.webp', 'img/lb17.webp', 'img/lb19.webp', 'img/lb20.webp', 'img/lb21.webp', 'img/lb22.webp', 'img/lb23.webp']
       },
       'trummers': {
         title: 'Trummer\'s — An American Bistro',
